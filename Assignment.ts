@@ -1,4 +1,3 @@
-// Problem: 01 
 function formatString(input: string, toUpper?: boolean): string {
     const result = toUpper === true ? input.toUpperCase() : input.toLowerCase();
     console.log(result);
@@ -8,7 +7,8 @@ function formatString(input: string, toUpper?: boolean): string {
 formatString("hello", false)
 
 
-// Problem: 02 
+
+
 function filterByRating(items: { title: string; rating: number }[]): { title: string; rating: number }[] {
     const result = items.filter(item => item.rating >= 4);
     console.log(result);
@@ -24,7 +24,8 @@ const books = [
 filterByRating(books);
 
 
-// Problem: 03
+
+
 function concatenateArrays<T>(...arrays: T[][]): T[] {
     const result = arrays.flat() //es2019 require to run flat 
     console.log(result)
@@ -34,7 +35,8 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 concatenateArrays([1, 2], [3, 4], [5]);
 
 
-// Problem:04
+
+
 class Vehicle {
     private make: string;
     private year: number;
@@ -68,7 +70,7 @@ class Vehicle {
   
 
 
-// Problem:05
+  
 function processValue(value: string | number): number {
     const result = typeof value === "string" ? value.length : value * 2;
     console.log(result)
@@ -79,7 +81,7 @@ processValue("rifat")
 
 
 
-// Problem: 06
+
 interface Product {
     name: string;
     price: number;
@@ -108,7 +110,7 @@ getMostExpensiveProduct(products);
 
 
 
-// Problem: 07 
+
 enum Day {
     Monday,
     Tuesday,
@@ -133,7 +135,8 @@ function getDayType(day: Day): string {
 getDayType(Day.Saturday);   
 
 
-// Problem: 08 
+
+
 async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
       if (n < 0) {
