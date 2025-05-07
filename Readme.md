@@ -24,7 +24,7 @@ In TypeScript, the `keyof` keyword is used to extract the keys of a type as a un
 
 ---
 
-## 🧠 What Does `keyof` Do?
+## What Does `keyof` Do?
 
 `keyof` takes an object type and produces a union of its keys.
 
